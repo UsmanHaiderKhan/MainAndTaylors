@@ -1,0 +1,36 @@
+﻿@model MainTaylorANDClothes.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+<div>
+    @if (ViewBag.Error != null)
+    {
+        <p class="text-danger"> @ViewBag.Error</p>
+
+    }
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-2">
+            <h1>Login</h1>
+            @using (Html.BeginForm("Login", "Users", new { c = ViewBag.Controller, a = ViewBag.Action }, FormMethod.Post, new { id = "loginform", enctype = "plain/text" }))
+            {
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.LoginId)
+                    @Html.TextBoxFor(m => m.LoginId, null, new { placeholder = "Enter Username", @class = "form-control", type = "text" })
+                    @Html.ValidationMessageFor(m => m.LoginId, null, new { @class = "text-white " })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password)
+                    @Html.TextBoxFor(m => m.Password, null, new { @class = "form-control", placeholder = "Enter Password", type = "password" })
+                    @Html.ValidationMessageFor(m => m.Password, null, new { @class = "text-white" })
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" name="submit" value="Login">
+                </div>
+
+            }
+        </div>
+    </div>
+</div>
