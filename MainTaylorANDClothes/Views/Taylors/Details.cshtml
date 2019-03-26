@@ -7,9 +7,8 @@
     @Html.ActionLink("print", "PrintDetails")
     <h4>Taylor</h4>
     <hr />
-    <div class="row">
-        <div class="col-md-4 offset-md-8">
-            <h2>Kameez</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
             <dl class="dl-horizontal">
                 <dt>
                     @Html.DisplayNameFor(model => model.CustomerName):
@@ -17,158 +16,191 @@
                 <dd>
                     @Html.DisplayFor(model => model.CustomerName)
                 </dd>
+            </dl>
+        </div>
+        <div class="col-md-6">
+            <dl class="dl-horizontal">
                 <dt>
                     @Html.DisplayNameFor(model => model.CellNo)
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.CellNo)
                 </dd>
+            </dl>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Kameez</h2>
+            <dl class="dl-horizontal">
                 <dt>
-                    @Html.DisplayNameFor(model => model.KamezLenght)
+                    قميض  لمبائی
+                    @*@Html.DisplayNameFor(model => model.KamezLenght)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.KamezLenght)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Tera)
+                    تيرہ
+                    @*@Html.DisplayNameFor(model => model.Tera)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Tera)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Galla)
+                    گلا/کالر
+                    @*@Html.DisplayNameFor(model => model.Galla)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Galla)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Kandha)
+                    کندھا
+                    @*@Html.DisplayNameFor(model => model.Kandha)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Kandha)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Baghal)
+                    بغل
+                    @*@Html.DisplayNameFor(model => model.Baghal)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Baghal)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Bazoo)
+                    بازو
+                    @*@Html.DisplayNameFor(model => model.Bazoo)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Bazoo)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Kohni)
+                    کوہنی
+                    @*@Html.DisplayNameFor(model => model.Kohni)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Kohni)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Chest)
+                    چيسٹ/چھاتی
+                    @*@Html.DisplayNameFor(model => model.Chest)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Chest)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Kamar)
+                    کمر
+                    @*@Html.DisplayNameFor(model => model.Kamar)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Kamar)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Ghera)
+                    گھيرا
+                    @*@Html.DisplayNameFor(model => model.Ghera)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Ghera)
                 </dd>
             </dl>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 offset-md-4 mt-5">
+        <div class="col-md-4 ">
             <h2>Shalware</h2>
             <dl class="dl-horizontal">
                 <dt>
-                    @Html.DisplayNameFor(model => model.ShalwaarLenght)
+                    شلوار  لمبائی
+                    @*@Html.DisplayNameFor(model => model.ShalwaarLenght)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.ShalwaarLenght)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Aasan)
+                    آسن
+                    @*@Html.DisplayNameFor(model => model.Aasan)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Aasan)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Ponchha)
+                    پانچہ
+                    @*@Html.DisplayNameFor(model => model.Ponchha)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Ponchha)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Palla)
+                    پلہ
+                    @*@Html.DisplayNameFor(model => model.Palla)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Palla)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Kundha)
+                    کندہ
+                    @*@Html.DisplayNameFor(model => model.Kundha)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Kundha)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Kundhi)
+                    کندی
+                    @*@Html.DisplayNameFor(model => model.Kundhi)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Kundhi)
                 </dd>
             </dl>
         </div>
-        <div class="col-md-4 mt-5">
+        <div class="col-md-4">
             <h2>Design</h2>
             <dl class="dl-horizontal">
                 <dt>
-                    @Html.DisplayNameFor(model => model.Saali)
+                    سلائی
+                    @*@Html.DisplayNameFor(model => model.Saali)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Saali)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Kaff)
+                    کف
+                    @*@Html.DisplayNameFor(model => model.Kaff)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Kaff)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Button)
+                    بٹن
+                    @*@Html.DisplayNameFor(model => model.Button)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Button)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Pocket)
+                    جيب
+                    @*@Html.DisplayNameFor(model => model.Pocket)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Pocket)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Sticker)
+                    سٹيکر
+                    @*@Html.DisplayNameFor(model => model.Sticker)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Sticker)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.TotalSuit)
+                    کل سوٹ
+                    @*@Html.DisplayNameFor(model => model.TotalSuit)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.TotalSuit)
                 </dd>
                 <dt>
-                    @Html.DisplayNameFor(model => model.Gheras)
+                    گھيرا
+                    @*@Html.DisplayNameFor(model => model.Gheras)*@
                 </dt>
                 <dd>
                     @Html.DisplayFor(model => model.Gheras)
